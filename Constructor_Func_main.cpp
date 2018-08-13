@@ -21,6 +21,9 @@ int main()
 		cout << "Using a constructor to reset an object\n";
 		stock1 = Stock("Nifty Foods", 10, 50.0);
 		stock1.show();
+
+		const Stock *tops = &stock1.topval(stock2);
+		tops->show();
 		cout << "Done\n";
 	}
 
